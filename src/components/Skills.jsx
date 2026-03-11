@@ -37,9 +37,21 @@ const rowVariant = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-24 px-6 md:px-12" style={{ background: "#FF4D00" }}>
+    <section
+      id="skills"
+      className="relative py-16 md:py-24 lg:py-28 px-6 md:px-10 lg:px-16"
+      style={{ background: "#FF4D00" }}
+    >
       <div className="max-w-6xl mx-auto">
-        <p style={{ fontFamily: "'Space Mono', monospace", fontSize: "11px", color: "#000", letterSpacing: "0.2em", marginBottom: "1rem" }}>
+        <p
+          style={{
+            fontFamily: "'Space Mono', monospace",
+            fontSize: "clamp(10px, 2vw, 11px)",
+            color: "#000",
+            letterSpacing: "0.2em",
+            marginBottom: "1rem",
+          }}
+        >
           03 — SKILLS
         </p>
 
@@ -50,9 +62,12 @@ export default function Skills() {
           viewport={{ once: true, margin: "-80px" }}
           style={{
             fontFamily: "'Archivo Black', sans-serif",
-            fontSize: "clamp(3rem, 9vw, 7rem)",
-            letterSpacing: "-0.04em", lineHeight: 0.87,
-            color: "#000", textTransform: "uppercase", marginBottom: "3rem",
+            fontSize: "clamp(2.5rem, 8vw, 7rem)",
+            letterSpacing: "-0.04em",
+            lineHeight: 0.87,
+            color: "#000",
+            textTransform: "uppercase",
+            marginBottom: "3rem",
           }}
         >
           SKILLS
@@ -69,26 +84,26 @@ export default function Skills() {
             <motion.div
               key={group.num}
               variants={rowVariant}
-              className="border-b-2 border-black group transition-colors duration-300 hover:bg-black p-7"
+              className="border-b-2 border-black group transition-colors duration-300 hover:bg-black p-4 md:p-6 lg:p-7"
             >
-              <div className="flex items-start gap-6">
-                <span className="font-['Space_Mono'] text-[11px] text-black tracking-[0.1em] min-w-[2.5rem] pt-1.5 transition-colors duration-300 group-hover:text-[#FF4D00]">
+              <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-6">
+                <span className="font-['Space_Mono'] text-[clamp(10px, 2vw, 11px)] text-black tracking-[0.1em] min-w-[2.5rem] pt-1.5 transition-colors duration-300 group-hover:text-[#FF4D00]">
                   {group.num}
                 </span>
 
                 <div className="flex-1">
                   <div className="flex items-center gap-4">
-                    <h3 className="font-['Archivo_Black'] text-[clamp(1.2rem,3vw,2rem)] tracking-[-0.04em] text-black uppercase m-0 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white">
+                    <h3 className="font-['Archivo_Black'] text-[clamp(1rem, 3vw, 2rem)] tracking-[-0.04em] text-black uppercase m-0 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-white">
                       {group.title}
                     </h3>
                   </div>
 
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mt-3">
+                  <div className="flex flex-wrap gap-2 mt-2 md:mt-3">
                     {group.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="font-['Space_Mono'] text-[11px] px-3 py-1 border-2 border-black text-black bg-transparent transition-colors duration-300 group-hover:border-[#FF4D00] group-hover:text-[#FF4D00]"
+                        className="font-['Space_Mono'] text-[clamp(9px, 2vw, 11px)] px-2 md:px-3 py-1 border-2 border-black text-black bg-transparent transition-colors duration-300 group-hover:border-[#FF4D00] group-hover:text-[#FF4D00]"
                       >
                         {tag}
                       </span>

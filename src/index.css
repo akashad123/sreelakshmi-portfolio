@@ -1,41 +1,54 @@
 /* drift animation for atmosphere dots */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 /* ── Design tokens ─────────────────────────────────────── */
 @theme {
-  --color-orange:  #FF4D00;
-  --color-black:   #000000;
-  --color-white:   #FFFFFF;
+  --color-orange: #ff4d00;
+  --color-black: #000000;
+  --color-white: #ffffff;
 
-  --font-archivo: 'Archivo Black', sans-serif;
-  --font-mono:    'Space Mono', monospace;
-  --font-inter:   'Inter', sans-serif;
+  --font-archivo: "Archivo Black", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-inter: "Inter", sans-serif;
 }
 
 /* ── Base styles ───────────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
-  background-color: #FF4D00;
+  padding: 0;
+  background-color: #ff4d00;
   color: #000000;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ── Selection ─────────────────────────────────────────── */
 ::selection {
   background: #000000;
-  color: #FF4D00;
+  color: #ff4d00;
 }
 
 /* ── Marquee animation ─────────────────────────────────── */
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
@@ -46,8 +59,12 @@ body {
 
 /* ── Spin slow (scroll indicator) ─────────────────────── */
 @keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .animate-spin-slow {
@@ -69,6 +86,10 @@ body {
 
 /* ── Atmosphere drift ──────────────────────────────────── */
 @keyframes drift {
-  from { transform: translateY(0px) translateX(0px); }
-  to   { transform: translateY(-30px) translateX(15px); }
+  from {
+    transform: translateY(0px) translateX(0px);
+  }
+  to {
+    transform: translateY(-30px) translateX(15px);
+  }
 }

@@ -9,12 +9,20 @@ export default function About() {
   return (
     <section
       id="about"
-      className="skew-top relative py-28 px-6 md:px-12"
+      className="skew-top relative py-16 md:py-24 lg:py-28 px-6 md:px-10 lg:px-16"
       style={{ background: "#000" }}
     >
       <div className="max-w-6xl mx-auto">
         {/* Label */}
-        <p style={{ fontFamily: "'Space Mono', monospace", fontSize: "11px", color: "#FF4D00", letterSpacing: "0.2em", marginBottom: "1rem" }}>
+        <p
+          style={{
+            fontFamily: "'Space Mono', monospace",
+            fontSize: "clamp(10px, 2vw, 11px)",
+            color: "#FF4D00",
+            letterSpacing: "0.2em",
+            marginBottom: "1rem",
+          }}
+        >
           02 — ABOUT
         </p>
 
@@ -26,9 +34,12 @@ export default function About() {
           viewport={{ once: true, margin: "-80px" }}
           style={{
             fontFamily: "'Archivo Black', sans-serif",
-            fontSize: "clamp(3rem, 9vw, 7rem)",
-            letterSpacing: "-0.04em", lineHeight: 0.87,
-            color: "#fff", textTransform: "uppercase", marginBottom: "3rem",
+            fontSize: "clamp(2.5rem, 8vw, 7rem)",
+            letterSpacing: "-0.04em",
+            lineHeight: 0.87,
+            color: "#fff",
+            textTransform: "uppercase",
+            marginBottom: "3rem",
           }}
         >
           ABOUT
@@ -45,10 +56,10 @@ export default function About() {
             style={{
               background: "#000",
               border: "2px solid #fff",
-              padding: "2.5rem",
+              padding: "clamp(1.5rem, 5vw, 2.5rem)",
             }}
           >
-            <div className="w-full border-t-2 border-white pt-8">
+            <div className="w-full border-t-2 border-white pt-6 md:pt-8">
               {/* Bio */}
               <div style={{ fontFamily: "'Inter', sans-serif", color: "#fff" }}>
                 <ScrollReveal
@@ -57,15 +68,15 @@ export default function About() {
                   baseRotation={3}
                   blurStrength={4}
                   containerClassName="w-full"
-                  textClassName="text-[1.4rem] md:text-[1.8rem] leading-relaxed font-inter"
+                  textClassName="text-sm md:text-base lg:text-lg xl:text-xl leading-relaxed font-inter"
                 >
                   {about.description}
                 </ScrollReveal>
               </div>
 
               {/* Education */}
-              <div className="mt-12 space-y-4 border-t border-white/30 pt-8">
-                <h3 className="font-mono text-sm uppercase tracking-widest text-[#FF4D00] mb-6">
+              <div className="mt-8 md:mt-12 space-y-4 border-t border-white/30 pt-6 md:pt-8">
+                <h3 className="font-mono text-xs md:text-sm uppercase tracking-widest text-[#FF4D00] mb-4 md:mb-6">
                   Education
                 </h3>
                 {education.map((edu, index) => (
@@ -75,7 +86,7 @@ export default function About() {
                       enableBlur
                       baseRotation={2}
                       blurStrength={3}
-                      textClassName="text-lg md:text-xl text-white font-inter"
+                      textClassName="text-sm md:text-base lg:text-lg text-white font-inter"
                     >
                       {`${edu.degree} — ${edu.institution} (${edu.duration})`}
                     </ScrollReveal>
@@ -84,21 +95,35 @@ export default function About() {
               </div>
 
               {/* Download CV */}
-              <div className="mt-10">
+              <div className="mt-8 md:mt-10">
                 <a
                   href="/Sreelakshmi_Resume_DataAnalyst.pdf"
                   download
-                  className="inline-flex items-center gap-3 self-start rounded-full px-6 py-3 transition-transform duration-300 hover:translate-x-2"
+                  className="inline-flex items-center gap-3 self-start rounded-full px-4 md:px-6 py-2 md:py-3 transition-transform duration-300 hover:translate-x-2"
                   style={{
-                    background: "#FF4D00", color: "#000",
-                    fontFamily: "'Space Mono', monospace", fontSize: "12px",
-                    textDecoration: "none", border: "2px solid #FF4D00",
-                    textTransform: "uppercase"
+                    background: "#FF4D00",
+                    color: "#000",
+                    fontFamily: "'Space Mono', monospace",
+                    fontSize: "clamp(10px, 2vw, 12px)",
+                    textDecoration: "none",
+                    border: "2px solid #FF4D00",
+                    textTransform: "uppercase",
                   }}
                 >
                   DOWNLOAD CV
-                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  <svg
+                    width="14"
+                    height="14"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
                   </svg>
                 </a>
               </div>

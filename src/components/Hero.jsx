@@ -38,7 +38,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-between pt-24 pb-0 px-6 md:px-12 overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-between pt-16 md:pt-20 lg:pt-24 pb-0 px-6 md:px-10 lg:px-16 overflow-hidden"
       style={{ background: "#FF4D00" }}
     >
       <div className="flex-1 flex flex-col justify-center">
@@ -59,9 +59,9 @@ export default function Hero() {
             style={{
               margin: 0,
               lineHeight: 0.87,
-              fontSize: 50,
+              fontSize: "clamp(1.5rem, 5vw, 3rem)",
               fontWeight: "bold",
-              color: "#fff"
+              color: "#fff",
             }}
           >
             {personal.subtitle}
@@ -85,12 +85,12 @@ export default function Hero() {
           variants={metaVariant}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-3 items-center gap-4"
+          className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4"
         >
           <p
             style={{
               fontFamily: "'Space Mono', monospace",
-              fontSize: "18px",
+              fontSize: "clamp(12px, 3vw, 18px)",
               color: "#fff",
               lineHeight: 1.6,
               margin: 0,
@@ -101,18 +101,17 @@ export default function Hero() {
             {personal.location.toUpperCase()}
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center flex-shrink-0">
             <ScrollIndicator />
           </div>
 
           <p
             style={{
               fontFamily: "'Space Mono', monospace",
-              fontSize: "18px",
+              fontSize: "clamp(12px, 3vw, 18px)",
               color: "#fff",
               lineHeight: 1.6,
               margin: 0,
-              textAlign: "right",
             }}
           >
             {skills.languagesTools.slice(0, 3).join(" • ").toUpperCase()}
@@ -126,12 +125,12 @@ export default function Hero() {
           variants={summaryVariant}
           initial="hidden"
           animate="visible"
-          className="mt-8 grid md:grid-cols-2 gap-8 border-t-2 border-black pt-6 pb-10"
+          className="mt-6 md:mt-8 grid md:grid-cols-2 gap-8 border-t-2 border-black pt-4 md:pt-6 pb-6 md:pb-10"
         >
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: "1rem",
+              fontSize: "clamp(0.95rem, 2vw, 1.1rem)",
               lineHeight: 1.7,
               color: "#fff",
               margin: 0,

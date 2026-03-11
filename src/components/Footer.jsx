@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="relative px-6 md:px-12 py-8"
+      className="relative px-6 md:px-10 lg:px-16 py-6 md:py-8"
       style={{
         background: "#000",
         borderTop: "2px solid #FF4D00",
@@ -17,18 +17,18 @@ export default function Footer() {
         <p
           style={{
             fontFamily: "'Space Mono', monospace",
-            fontSize: "12px",
+            fontSize: "clamp(10px, 2vw, 12px)",
             color: "#fff",
             margin: 0,
             letterSpacing: "0.1em",
-            textTransform: "uppercase"
+            textTransform: "uppercase",
           }}
         >
           © {year} {portfolioData.personal.name}
         </p>
 
         {/* Right – social links */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 md:gap-6">
           {[
             {
               label: "GITHUB",
@@ -47,7 +47,7 @@ export default function Footer() {
               className="transition-all duration-200 hover:text-orange-500"
               style={{
                 fontFamily: "'Space Mono', monospace",
-                fontSize: "12px",
+                fontSize: "clamp(10px, 2vw, 12px)",
                 color: "#fff",
                 textDecoration: "none",
                 letterSpacing: "0.1em",
