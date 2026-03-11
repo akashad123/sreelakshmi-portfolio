@@ -1,0 +1,74 @@
+/* drift animation for atmosphere dots */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ── Design tokens ─────────────────────────────────────── */
+@theme {
+  --color-orange:  #FF4D00;
+  --color-black:   #000000;
+  --color-white:   #FFFFFF;
+
+  --font-archivo: 'Archivo Black', sans-serif;
+  --font-mono:    'Space Mono', monospace;
+  --font-inter:   'Inter', sans-serif;
+}
+
+/* ── Base styles ───────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: #FF4D00;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ── Selection ─────────────────────────────────────────── */
+::selection {
+  background: #000000;
+  color: #FF4D00;
+}
+
+/* ── Marquee animation ─────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+/* ── Spin slow (scroll indicator) ─────────────────────── */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+/* ── Skewed section dividers ───────────────────────────── */
+.skew-top {
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+}
+
+.skew-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.skew-both {
+  clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+}
+
+/* ── Atmosphere drift ──────────────────────────────────── */
+@keyframes drift {
+  from { transform: translateY(0px) translateX(0px); }
+  to   { transform: translateY(-30px) translateX(15px); }
+}

@@ -1,0 +1,30 @@
+.scroll-velocity-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.parallax {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.scroller span {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+/* Alternate row styling as requested by user */
+.parallax:nth-child(1) .scroller {
+  color: #FF4D00;
+}
+
+.parallax:nth-child(2) .scroller {
+  color: rgba(255, 255, 255, 0.8);
+}

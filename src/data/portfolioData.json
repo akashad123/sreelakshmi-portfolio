@@ -1,0 +1,110 @@
+{
+    "personal": {
+        "name": "Sreelakshmi P M",
+        "title": "Data Analyst",
+        "subtitle": "turning data into insights.",
+        "location": "Thrissur, Kerala, India",
+        "phone": "+91 8089527220",
+        "email": "sreelakshmipm08@gmail.com",
+        "linkedin": "https://linkedin.com/in/sreelakshmi-pm-82824a2bb",
+        "github": "https://github.com/sreelakshmipm008"
+    },
+    "professionalSummary": "Aspiring Data Analyst with hands-on experience in SQL, Python, Excel, and Tableau through end-to-end analytics projects and business simulations. Skilled in data cleaning, exploratory data analysis, dashboard development, and predictive modeling. Strong ability to convert raw data into actionable business insights.",
+    "about": {
+        "description": "I am currently pursuing a Master of Computer Applications (MCA) at Lead College Autonomous. I completed my Bachelor of Computer Applications (BCA) from Mar Osthatheos College under Calicut University. My interests focus on analyzing datasets, discovering patterns, and building dashboards that help businesses make data-driven decisions."
+    },
+    "skills": {
+        "languagesTools": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Scikit-learn",
+            "SQL",
+            "Excel",
+            "Tableau"
+        ],
+        "databases": [
+            "MySQL",
+            "PostgreSQL"
+        ],
+        "coreSkills": [
+            "Data Cleaning",
+            "Exploratory Data Analysis (EDA)",
+            "Feature Engineering",
+            "Customer Segmentation",
+            "Model Evaluation",
+            "Window Functions",
+            "Business Insight Generation"
+        ]
+    },
+    "projects": [
+        {
+            "title": "Customer Churn Analysis & Prediction",
+            "github": "https://github.com/sreelakshmipm008/telco-churn-ml",
+            "technologies": [
+                "Excel",
+                "Python"
+            ],
+            "description": [
+                "Analyzed 7,043 telecom customer records to identify churn drivers.",
+                "Built Excel dashboard for churn insights by contract type and tenure.",
+                "Developed Logistic Regression model achieving 80% recall with AUC score of 0.83."
+            ]
+        },
+        {
+            "title": "E-Commerce Sales Analytics",
+            "github": "https://github.com/sreelakshmipm008/SQL-Ecommerce-Sales-Analytics",
+            "technologies": [
+                "SQL"
+            ],
+            "description": [
+                "Designed relational database and applied advanced SQL queries including JOIN, RANK and PARTITION BY.",
+                "Analyzed revenue trends with total revenue of 26,487.",
+                "Identified repeat customer rate of 40% and top customer contribution of 23%."
+            ]
+        },
+        {
+            "title": "Manufacturing Telemetry Analysis",
+            "technologies": [
+                "Tableau"
+            ],
+            "description": [
+                "Built interactive Tableau dashboards to analyze machine downtime.",
+                "Identified the factory with the highest downtime.",
+                "Detected key failure sources affecting production efficiency."
+            ]
+        }
+    ],
+    "internship": {
+        "title": "Python Flask Intern",
+        "duration": "7 Days",
+        "details": [
+            "Developed backend application using Flask.",
+            "Implemented CRUD operations and database connectivity.",
+            "Worked with structured datasets and REST APIs."
+        ]
+    },
+    "certifications": [
+        "Deloitte Australia – Data Analytics Virtual Experience (Forage)",
+        "Introduction to SQL – Simplilearn",
+        "Introduction to Data Science – Cisco Networking Academy",
+        "Machine Learning Workshop (10 Days) – GrapesGenix"
+    ],
+    "education": [
+        {
+            "degree": "MCA",
+            "institution": "Lead College Autonomous",
+            "duration": "2025 – Present"
+        },
+        {
+            "degree": "BCA",
+            "institution": "Mar Osthatheos College, Calicut University",
+            "duration": "2022 – 2025"
+        }
+    ],
+    "languages": [
+        "English",
+        "Malayalam",
+        "Hindi"
+    ]
+}

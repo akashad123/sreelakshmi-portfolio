@@ -1,0 +1,10 @@
+.scroll-reveal-container {
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.scroll-reveal-container .word {
+  display: inline-block;
+  will-change: opacity, filter, transform;
+  transform-origin: left bottom;
+}
