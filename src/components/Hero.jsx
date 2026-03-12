@@ -49,7 +49,7 @@ export default function Hero() {
               speed={3}
               enableShadows
               enableOnHover={false}
-              className="font-['Archivo_Black'] uppercase tracking-[-0.04em] text-[clamp(4rem,12vw,10rem)]"
+              className="font-['Archivo_Black'] uppercase tracking-[-0.04em] text-[4rem] sm:text-[5rem] md:text-[7rem] lg:text-[10rem]"
             >
               DATA ANALYST
             </GlitchText>
@@ -85,39 +85,29 @@ export default function Hero() {
           variants={metaVariant}
           initial="hidden"
           animate="visible"
-          className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4"
+          className="flex justify-between items-center gap-6"
         >
-          <p
-            style={{
-              fontFamily: "'Space Mono', monospace",
-              fontSize: "clamp(12px, 3vw, 18px)",
-              color: "#fff",
-              lineHeight: 1.6,
-              margin: 0,
-            }}
+          <div
+            className="font-['Space_Mono'] uppercase text-[10px] sm:text-[11px] md:text-[12px] tracking-[0.15em]"
+            style={{ color: "#fff", lineHeight: 1.6, margin: 0 }}
           >
             BASED IN
             <br />
             {personal.location.toUpperCase()}
-          </p>
+          </div>
 
           <div className="flex justify-center flex-shrink-0">
             <ScrollIndicator />
           </div>
 
-          <p
-            style={{
-              fontFamily: "'Space Mono', monospace",
-              fontSize: "clamp(12px, 3vw, 18px)",
-              color: "#fff",
-              lineHeight: 1.6,
-              margin: 0,
-            }}
+          <div
+            className="font-['Space_Mono'] uppercase text-[10px] sm:text-[11px] md:text-[12px] tracking-[0.15em] text-right"
+            style={{ color: "#fff", lineHeight: 1.6, margin: 0 }}
           >
             {skills.languagesTools.slice(0, 3).join(" • ").toUpperCase()}
             <br />
             DATA ANALYTICS
-          </p>
+          </div>
         </motion.div>
 
         {/* ── Summary ── */}
