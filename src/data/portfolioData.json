@@ -47,31 +47,58 @@
             ],
             "description": [
                 "Analyzed 7,043 telecom customer records to identify churn drivers.",
-                "Built Excel dashboard for churn insights by contract type and tenure.",
-                "Developed Logistic Regression model achieving 80% recall with AUC score of 0.83."
+                "Built machine learning models using Logistic Regression and Random Forest for churn prediction.",
+                "Achieved 80% churn recall enabling better customer retention decision-making."
+            ]
+        },
+        {
+            "title": "Retail Sales Analytics Dashboard",
+            "technologies": [
+                "SQL",
+                "Power BI",
+                "Excel"
+            ],
+            "description": [
+                "Developed an end-to-end retail sales analytics dashboard using SQL and Power BI.",
+                "Performed SQL-based data cleaning and trend analysis on sales and profitability.",
+                "Built interactive KPI dashboards to identify profitable products and regional sales insights."
+            ]
+        },
+        {
+            "title": "Data Mart Loading & Credit Rating Reporting",
+            "technologies": [
+                "Power BI",
+                "Data Analytics"
+            ],
+            "description": [
+                "Completed TCS iON industry project on Data Mart Loading and Credit Rating Reporting.",
+                "Worked on data preprocessing, transformation, and credit rating analysis.",
+                "Created interactive Power BI dashboards and generated business insights from real-world datasets."
             ]
         },
         {
             "title": "E-Commerce Sales Analytics",
             "github": "https://github.com/sreelakshmipm008/SQL-Ecommerce-Sales-Analytics",
             "technologies": [
-                "SQL"
+                "SQL",
+                "Data Analysis"
             ],
             "description": [
-                "Designed relational database and applied advanced SQL queries including JOIN, RANK and PARTITION BY.",
-                "Analyzed revenue trends with total revenue of 26,487.",
-                "Identified repeat customer rate of 40% and top customer contribution of 23%."
+                "Designed relational database and performed advanced SQL analytics using JOIN, RANK, and PARTITION BY.",
+                "Analyzed revenue trends and customer purchasing behavior.",
+                "Identified repeat customer patterns and top customer revenue contribution."
             ]
         },
         {
             "title": "Manufacturing Telemetry Analysis",
             "technologies": [
-                "Tableau"
+                "Tableau",
+                "Data Visualization"
             ],
             "description": [
-                "Built interactive Tableau dashboards to analyze machine downtime.",
-                "Identified the factory with the highest downtime.",
-                "Detected key failure sources affecting production efficiency."
+                "Built interactive Tableau dashboards to analyze manufacturing machine downtime.",
+                "Detected major failure sources impacting production efficiency.",
+                "Identified factories with the highest downtime through telemetry analysis."
             ]
         }
     ],
@@ -85,6 +112,8 @@
         ]
     },
     "certifications": [
+        "TCS iON Industry Project – Data Mart Loading & Credit Rating Reporting",
+        "GenAI Powered Data Analytics Job Simulation – Forage",
         "Deloitte Australia – Data Analytics Virtual Experience (Forage)",
         "Introduction to SQL – Simplilearn",
         "Introduction to Data Science – Cisco Networking Academy",

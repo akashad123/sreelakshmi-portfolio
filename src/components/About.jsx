@@ -97,7 +97,7 @@ export default function About() {
               {/* Download CV */}
               <div className="mt-8 md:mt-10">
                 <a
-                  href="/Sreelakshmi_Resume_DataAnalyst.pdf"
+                  href="/Sreelakshmi_PM_Data_Analyst.pdf"
                   download
                   className="inline-flex items-center gap-3 self-start rounded-full px-4 md:px-6 py-2 md:py-3 transition-transform duration-300 hover:translate-x-2"
                   style={{
